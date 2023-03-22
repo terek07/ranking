@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmy Wojenne</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Ranking najlepszych filmów wojennych</h1>
+    </header>
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+      
+        <img class="image" src="1917.webp" draggable="false"/>
+        <img class="image" src="dunkirk.jpg" draggable="false"/>
+        <img class="image" src="panfilow.jpg" draggable="false" />
+        <img class="image" src="bhd.webp" draggable="false" />
+        <img class="image" src="midway.jpg" draggable="false" />
+        <img class="image" src="spr.jpg" draggable="false" />
+        <img class="image" src="1944.png" draggable="false" />
+        <img class="image" src="aqotwf.webp" draggable="false" />
+        <img class="image" src="hacksaw.jpg" draggable="false" />
+        <img class="image" src="jr2ws.jpg" draggable="false" />
+      </div>
+      <br>
+      <h2>1917</h2>
+      <h2>Dunkierka (Dunkirk)</h2>
+      <h2>Żołnierze Panfiłowa (28 панфиловцев)</h2>
+      <h2>Helikopter w ogniu (Black Hawk Down)</h2>
+      <h2>Szeregowiec Ryan (Saving Private Ryan)</h2>
+      <h2>Midway</h2>
+      <h2>1944</h2>
+      <h2>Na Zachodzie bez zmian (All Quiet on the Western Front)</h2>
+      <h2>Przełęcz ocalonych (Hacksaw Ridge)</h2>
+      <h2>Jak rozpętałęm drugą wojnę światową</h2>
+      
+      <script>
+        const track = document.getElementById("image-track");
+
+const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+const handleOnUp = () => {
+  track.dataset.mouseDownAt = "0";  
+  track.dataset.prevPercentage = track.dataset.percentage;
+}
+
+const handleOnMove = e => {
+  if(track.dataset.mouseDownAt === "0") return;
+  
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+  
+  const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+  
+  track.dataset.percentage = nextPercentage;
+  
+  track.animate({
+    transform: `translate(${nextPercentage}%, -50%)`
+  }, { duration: 1200, fill: "forwards" });
+  
+  for(const image of track.getElementsByClassName("image")) {
+    image.animate({
+      objectPosition: `${100 + nextPercentage}% center`
+    }, { duration: 1200, fill: "forwards" });
+  }
+}
+
+
+window.onmousedown = e => handleOnDown(e);
+
+window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+window.onmouseup = e => handleOnUp(e);
+
+window.ontouchend = e => handleOnUp(e.touches[0]);
+
+window.onmousemove = e => handleOnMove(e);
+
+window.ontouchmove = e => handleOnMove(e.touches[0]);
+      </script>
+</body>
+</html>

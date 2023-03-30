@@ -13,16 +13,15 @@
     </header>
     <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
       
-        <img class="image" src="1917.webp" draggable="false"/>
-        <img class="image" src="dunkirk.jpg" draggable="false"/>
-        <img class="image" src="panfilow.jpg" draggable="false" />
-        <img class="image" src="bhd.webp" draggable="false" />
-        <img class="image" src="midway.jpg" draggable="false" />
-        <img class="image" src="spr.jpg" draggable="false" />
-        <img class="image" src="1944.png" draggable="false" />
-        <img class="image" src="aqotwf.webp" draggable="false" />
-        <img class="image" src="hacksaw.webp" draggable="false" />
-        <img class="image" src="jr2ws.jpg" draggable="false" />
+        <a href="#m1"><img class="image" src="1917.webp" draggable="false"/></a>
+        <a href="m2"><img class="image" src="dunkirk.jpg" draggable="false"/></a>
+        <a href="m3"><img class="image" src="panfilow.jpg" draggable="false" /></a>
+        <a href="m4"><img class="image" src="bhd.webp" draggable="false" /></a>
+        <a href="m5"><img class="image" src="midway.jpg" draggable="false" /></a>
+        <a href="m6"><img class="image" src="spr.jpg" draggable="false" /></a>
+        <a href="m7"><img class="image" src="1944.png" draggable="false" /></a>
+        <a href="m8"><img class="image" src="aqotwf.webp" draggable="false" /></a>
+        <a href="m9"><img class="image" src="hacksaw.webp" draggable="false" /></a>
       </div>
       <br>
       <main>
@@ -50,7 +49,7 @@
         <tr><td>premiera</td><td>
           2 listopada 2016 (Światowa premiera)</td></tr>
       </table>
-      <h2>Helikopter w ogniu (Black Hawk Down)</h2>
+      <h2 id="i1">Helikopter w ogniu (Black Hawk Down)</h2>
       <p>Oparty na faktach film opowiada o nieudanej akcji amerykańskiego oddziału 120 Delta, który miał za zadanie porwać dwóch poruczników zbuntowanych wojsk Somalii.</p>
       <table>
         <tr><td>gatunek</td><td>Dramat, Wojenny</td></tr>
@@ -126,7 +125,7 @@ const handleOnMove = e => {
   
   const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -200);
   
   track.dataset.percentage = nextPercentage;
   

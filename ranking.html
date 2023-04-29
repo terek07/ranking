@@ -7,12 +7,15 @@
     <title>Filmy Wojenne</title>
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
+<body id="body">
     <header>
         <h1>Ranking najlepszych filmów wojennych</h1>
     </header>
     <div id="divdl">
-        <input id="inputdl" type="checkbox" checked>
+        
+        <img src="https://th.bing.com/th/id/R.fe953ffbd7907178cc097bfa60e86dfa?rik=II63QpzUWcmb7w&riu=http%3a%2f%2fclipartmag.com%2fimages%2fblack-and-white-circle-21.png&ehk=eNnRI4ZagyceQi713lgJUTQdfDy%2fMVY5SQNNJiKslIE%3d&risl=&pid=ImgRaw&r=0" width="30" height="30" id="dl" >
+        <img src="https://th.bing.com/th/id/OIP.Uvy2OFeD-qegdmUuFOYQZAHaHa?pid=ImgDet&rs=1" width="30" height="30" id="dl2"class="opacity">
+        
     </div>
     <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
       
@@ -403,15 +406,18 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-const inputdl = document.getElementById("inputdl")
-console.log(inputdl)
+const dl = document.getElementById("dl")
+const dl2 = document.getElementById("dl2")
+const divdl = document.getElementById("divdl")
 function f1(){
-if(inputdl.checked){
-    document.style.backgroundColor="white"
-    console.log('działa')
+  const body = document.body;
+ body.classList.toggle("lightmode");
+ dl.classList.toggle("opacity")
+ dl2.classList.toggle("opacity")
+ divdl.classList.toggle("borderdl")
+ 
 }
-}
-inputdl.addEventListener("click", f1)
+divdl.addEventListener("click", f1)
       </script>
 </body>
 </html>

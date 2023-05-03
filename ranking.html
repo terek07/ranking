@@ -13,22 +13,21 @@
     </header>
     <div id="divdl">
         
-        <img src="https://th.bing.com/th/id/R.fe953ffbd7907178cc097bfa60e86dfa?rik=II63QpzUWcmb7w&riu=http%3a%2f%2fclipartmag.com%2fimages%2fblack-and-white-circle-21.png&ehk=eNnRI4ZagyceQi713lgJUTQdfDy%2fMVY5SQNNJiKslIE%3d&risl=&pid=ImgRaw&r=0" width="30" height="30" id="dl" >
-        <img src="https://th.bing.com/th/id/OIP.Uvy2OFeD-qegdmUuFOYQZAHaHa?pid=ImgDet&rs=1" width="30" height="30" id="dl2"class="opacity">
+        <button id="bdl"></button>
         
     </div>
     <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
       
-        <a href="#m1"draggable="false"><img class="image" src="1917.webp" draggable="false"/></a>
-        <a href="#m2"draggable="false"><img class="image" src="dunkirk.jpg" draggable="false"/></a>
-        <a href="#m3"draggable="false"><img class="image" src="panfilow.jpg" draggable="false" /></a>
-        <a href="#m4"draggable="false"><img class="image" src="bhd.webp" draggable="false" /></a>
-        <a href="#m5"draggable="false"><img class="image" src="midway.jpg" draggable="false" /></a>
-        <a href="#m6"draggable="false"><img class="image" src="spr.jpg" draggable="false" /></a>
-        <a href="#m7"draggable="false"><img class="image" src="1944.png" draggable="false" /></a>
-        <a href="#m8"draggable="false"><img class="image" src="aqotwf.webp" draggable="false" /></a>
-        <a href="#m9"draggable="false"><img class="image" src="hacksaw.jpg" draggable="false" /></a>
-        <a href="#m10"draggable="false"><img class="image" src="jr2ws.jpg" draggable="false" /></a>
+        <a href="#m1"draggable="false"><img alt="1917" class="image" src="1917.webp" draggable="false"/></a>
+        <a href="#m2"draggable="false"><img alt="Dunkierka" class="image" src="dunkirk.jpg" draggable="false"/></a>
+        <a href="#m3"draggable="false"><img alt="Żołnierze Panfiłowa" class="image" src="panfilow.jpg" draggable="false" /></a>
+        <a href="#m4"draggable="false"><img alt="Helikopter w ogniu" class="image" src="bhd.webp" draggable="false" /></a>
+        <a href="#m5"draggable="false"><img alt="Szeregowiec Ryan" class="image" src="midway.jpg" draggable="false" /></a>
+        <a href="#m6"draggable="false"><img alt="Midway" class="image" src="spr.jpg" draggable="false" /></a>
+        <a href="#m7"draggable="false"><img alt="1944" class="image" src="1944.png" draggable="false" /></a>
+        <a href="#m8"draggable="false"><img alt="Na Zachodzie bez zmian" class="image" src="aqotwf.webp" draggable="false" /></a>
+        <a href="#m9"draggable="false"><img alt="Przełęcz ocalonych" class="image" src="hacksaw.jpg" draggable="false" /></a>
+        <a href="#m10"draggable="false"><img alt="Jak rozpętałęm drugą wojnę światową" class="image" src="jr2ws.jpg" draggable="false" /></a>
       </div>
       <br>
       <main>
@@ -373,12 +372,12 @@ const handleOnUp = () => {
 const handleOnMove = e => {
   if(track.dataset.mouseDownAt === "0") return;
   
-  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
+  let mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX
+  let     maxDelta = window.innerWidth / 2;
   
-  const percentage = (mouseDelta / maxDelta) * -100,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -200);
+  let percentage = (mouseDelta / maxDelta) * -100
+  let     nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage
+  let     nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -250);
   
   track.dataset.percentage = nextPercentage;
   
@@ -406,16 +405,21 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 
-const dl = document.getElementById("dl")
-const dl2 = document.getElementById("dl2")
+const bdl = document.getElementById("bdl")
 const divdl = document.getElementById("divdl")
+if(localStorage.getItem("dl")=="l"){
+  f1()
+}
 function f1(){
   const body = document.body;
- body.classList.toggle("lightmode");
- dl.classList.toggle("opacity")
- dl2.classList.toggle("opacity")
- divdl.classList.toggle("borderdl")
- 
+ body.classList.toggle("lightmode")
+ if(body.classList.contains("lightmode")){
+ divdl.style.backgroundColor="black"
+localStorage.setItem("dl","l")
+ }else{
+  divdl.style.backgroundColor="white"
+localStorage.setItem("dl","d")
+ }
 }
 divdl.addEventListener("click", f1)
       </script>

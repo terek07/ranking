@@ -15,7 +15,7 @@ body {
   
   #image-track {
     display:flex;
-    gap: 4vmin;
+    gap: 3vmin;
     position:relative;
     left: 3%;
     top: 30vh;
@@ -102,18 +102,12 @@ body {
     left: 1%;
     padding-left: 3px;
     padding-top: 3px;
-    /* border: 3px solid white; */
-    border-radius: 15px;
-    width: 70px;
+    border-radius: 200%;
+    background-color: white;
+    padding: 10px;
+    
   }
-.borderdl{
-  border: 3px solid black;
-}
-.opacity{
+ 
+#bdl{
   opacity: 0;
-}
-#dl2{
-  position: fixed;
-  top: 5.5%;
-  left:5%;
 }

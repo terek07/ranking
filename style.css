@@ -5,6 +5,7 @@ body {
     margin: 0rem;
     font-family:'Courier New', Courier, monospace;
     color: white;
+    font-size: 110%;
     
   }
   .lightmode{
@@ -29,6 +30,10 @@ body {
     object-fit: cover;
     object-position: 100% center;
     border-radius: 4px;
+    transition: 0.7s;
+  }
+  .image:hover{
+    scale: 110%;
   }
   
   h1,h2{
@@ -48,6 +53,7 @@ body {
     font-size: small;
     color: gray;
     text-align: center;
+    padding: 10px;
   }
   main{
     margin-left: 15vw;
@@ -55,33 +61,34 @@ body {
   }
   p{
     line-height: 35px;
+
   }
-  .read-more-state {
+  .state {
     display: none;
   }
-  .read-more-target,.read-more-target2,.read-more-target3,.read-more-target4,.read-more-target5,.read-more-target6,.read-more-target7,.read-more-target8,.read-more-target9,.read-more-target10 {
+  .target,.target2,.target3,.target4,.target5,.target6,.target7,.target8,.target9,.target10 {
     opacity: 0;
     max-height: 0;
     font-size: 0;
     transition: .25s ease;
   }
   
-  #post-2:checked ~ .read-more-wrap .read-more-target,#post-3:checked ~ .read-more-wrap2 .read-more-target2,#post-4:checked ~ .read-more-wrap3 .read-more-target3,#post-5:checked ~ .read-more-wrap4 .read-more-target4,#post-6:checked ~ .read-more-wrap5 .read-more-target5,#post-7:checked ~ .read-more-wrap6 .read-more-target6,#post-8:checked ~ .read-more-wrap7 .read-more-target7,#post-9:checked ~ .read-more-wrap8 .read-more-target8,#post-10:checked ~ .read-more-wrap9 .read-more-target9,#post-11:checked ~ .read-more-wrap10 .read-more-target10  {
+  #list-2:checked ~ .wrap .target,#list-3:checked ~ .wrap2 .target2,#list-4:checked ~ .wrap3 .target3,#list-5:checked ~ .wrap4 .target4,#list-6:checked ~ .wrap5 .target5,#list-7:checked ~ .wrap6 .target6,#list-8:checked ~ .wrap7 .target7,#list-9:checked ~ .wrap8 .target8,#list-10:checked ~ .wrap9 .target9,#list-11:checked ~ .wrap10 .target10  {
     opacity: 1;
     font-size: inherit;
     max-height: 999em;
   }
   
-  #post-2 ~ .read-more-trigger:before,#post-3 ~ .read-more-trigger:before,#post-4 ~ .read-more-trigger:before,#post-5 ~ .read-more-trigger:before,#post-6 ~ .read-more-trigger:before,#post-7 ~ .read-more-trigger:before,#post-8 ~ .read-more-trigger:before,#post-9 ~ .read-more-trigger:before,#post-10 ~ .read-more-trigger:before,#post-11 ~ .read-more-trigger:before {
+  #list-2 ~ .trigger:before,#list-3 ~ .trigger:before,#list-4 ~ .trigger:before,#list-5 ~ .trigger:before,#list-6 ~ .trigger:before,#list-7 ~ .trigger:before,#list-8 ~ .trigger:before,#list-9 ~ .trigger:before,#list-10 ~ .trigger:before,#list-11 ~ .trigger:before {
     content: 'Więcej';
   }
   
-  #post-2:checked ~ .read-more-trigger:before,#post-3:checked ~ .read-more-trigger:before,#post-4:checked ~ .read-more-trigger:before,#post-5:checked ~ .read-more-trigger:before,#post-6:checked ~ .read-more-trigger:before,#post-7:checked ~ .read-more-trigger:before,#post-8:checked ~ .read-more-trigger:before,#post-9:checked ~ .read-more-trigger:before,#post-10:checked ~ .read-more-trigger:before,#post-11:checked ~ .read-more-trigger:before {
+  #list-2:checked ~ .trigger:before,#list-3:checked ~ .trigger:before,#list-4:checked ~ .trigger:before,#list-5:checked ~ .trigger:before,#list-6:checked ~ .trigger:before,#list-7:checked ~ .trigger:before,#list-8:checked ~ .trigger:before,#list-9:checked ~ .trigger:before,#list-10:checked ~ .trigger:before,#list-11:checked ~ .trigger:before {
     content: 'Mniej';
   }
   
   
-  .read-more-trigger {
+  .trigger {
     cursor: pointer;
     display: inline-block;
     padding: 0 .5em;
@@ -110,4 +117,8 @@ body {
  
 #bdl{
   opacity: 0;
+}
+.contener{
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
 }

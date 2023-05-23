@@ -89,7 +89,7 @@ p{
 }
 
 
-.trigger {
+.trigger ,.scalediv{
   cursor: pointer;
   display: inline-block;
   padding: 0 .5em;
@@ -116,9 +116,7 @@ table,tr,td{
   
 }
 
-#bdl{
-opacity: 0;
-}
+
 .contener{
 padding-bottom: 15px;
 border-bottom: 1px solid gray;
@@ -128,8 +126,8 @@ border-bottom: 1px solid gray;
   height: 270px;
   display: flex;
 }
-.posters{
+.posters,.scalediv{
   position: absolute;
-  left: 1000px;
-  margin-top: 15px;
+  left: 1200px;
+  
 }

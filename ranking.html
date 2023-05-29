@@ -1,454 +1,690 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmy Wojenne</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmy Wojenne</title>
+  <link href="style.css" rel="stylesheet">
 </head>
+
 <body id="body">
-    <header>
-        <h1>Ranking najlepszych filmów wojennych</h1>
-    </header>
-    <div id="divdl" title="Kliknij aby zmienić motyw">
-        
+  <header>
+    <h1>Ranking najlepszych filmów wojennych</h1>
+  </header>
+  <div id="divdl" title="Kliknij aby zmienić motyw">
+
+  </div>
+  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+
+    <a href="#m1" draggable="false"><img alt="1917" class="image" src="1917.webp" draggable="false" /></a>
+    <a href="#m2" draggable="false"><img alt="Dunkierka" class="image" src="dunkirk.jpg" draggable="false" /></a>
+    <a href="#m3" draggable="false"><img alt="Żołnierze Panfiłowa" class="image" src="panfilow.jpg"
+        draggable="false" /></a>
+    <a href="#m4" draggable="false"><img alt="Helikopter w ogniu" class="image" src="bhd.webp" draggable="false" /></a>
+    <a href="#m5" draggable="false"><img alt="Szeregowiec Ryan" class="image" src="midway.jpg" draggable="false" /></a>
+    <a href="#m6" draggable="false"><img alt="Midway" class="image" src="spr.jpg" draggable="false" /></a>
+    <a href="#m7" draggable="false"><img alt="1944" class="image" src="1944.png" draggable="false" /></a>
+    <a href="#m8" draggable="false"><img alt="Na Zachodzie bez zmian" class="image" src="aqotwf.webp"
+        draggable="false" /></a>
+    <a href="#m9" draggable="false"><img alt="Przełęcz ocalonych" class="image" src="hacksaw.jpg"
+        draggable="false" /></a>
+    <a href="#m10" draggable="false"><img alt="Jak rozpętałęm drugą wojnę światową" class="image" src="jr2ws.jpg"
+        draggable="false" /></a>
+  </div>
+  <br>
+  <main>
+
+
+    <h2 id="m1">1917</h2>
+    <p>Dwaj brytyjscy szeregowcy Schofield i Blake, u schyłku Pierwszej Wojny Światowej otrzymują ogromnie ryzykowną
+      misję, od której powodzenia zależy życie ich towarzyszy. Muszą przedrzeć się za linię wroga i przekazać rozkaz
+      odwołujący atak, który w świetle nowych informacji nie ma najmniejszych szans powodzenia. Jeśli nie uda się
+      wypełnić misji, niechybna śmierć czeka ponad 1600 żołnierzy, a wśród nich brata Blake'a.</p>
+    <img alt="Plakat filmu" src="https://m.media-amazon.com/images/I/71lDHpvrXRL.jpg" class="posters">
+
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Sam Mendes</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Sam Mendes, Krysty Wilson-Cairns</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Dramat,Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>USA, Wielka Brytania, Indie, Hiszpania, Kanada</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>25 grudnia 2019 (Światowa premiera)<br>
+          24 stycznia 2020 (Polska premiera kinowa)</td>
+      </tr>
+    </table>
+
+
+
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-2" />
+
+      <ul class="wrap">
+        <h3>Obsada: </h3>
+        <li>George MacKay jako lance corporal William Schofield</li>
+        <li>Dean-Charles Chapman jako lance corporal Tom Blake</li>
+        <li>Mark Strong jako kapitan Smith</li>
+        <li class="target">Andrew Scott jako porucznik Leslie</li>
+        <li class="target">Richard Madden jako porucznik Joseph Blake</li>
+        <li class="target">Claire Duburcq jako Lauri</li>
+        <li class="target">Colin Firth jako generał Erinmore</li>
+        <li class="target">Benedict Cumberbatch jako pułkownik Mackenzie</li>
+        <li class="target">Daniel Mays jako sierżant Sanders</li>
+        <li class="target">Adrian Scarborough jako major Hepburn</li>
+        <li class="target">Jamie Parker jako porucznik Richards</li>
+        <li class="target"> Michael Jibson jako porucznik Hutton</li>
+        <li class="target">Richard McCabe jako pułkownik Collins</li>
+        <li class="target"> Nabhaan Rizwan jako Sipaj</li>
+        <li class="target"> Michael Cornelius jako szeregowy Cornelius</li>
+      </ul>
+
+
+      <label for="list-2" class="trigger"></label>
+
+      <a class="scalediv" href="https://m.media-amazon.com/images/I/71lDHpvrXRL.jpg">Powiększ zdjęcie</a>
+
+
+
     </div>
-    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-      
-        <a href="#m1"draggable="false"><img alt="1917" class="image" src="1917.webp" draggable="false"/></a>
-        <a href="#m2"draggable="false"><img alt="Dunkierka" class="image" src="dunkirk.jpg" draggable="false"/></a>
-        <a href="#m3"draggable="false"><img alt="Żołnierze Panfiłowa" class="image" src="panfilow.jpg" draggable="false" /></a>
-        <a href="#m4"draggable="false"><img alt="Helikopter w ogniu" class="image" src="bhd.webp" draggable="false" /></a>
-        <a href="#m5"draggable="false"><img alt="Szeregowiec Ryan" class="image" src="midway.jpg" draggable="false" /></a>
-        <a href="#m6"draggable="false"><img alt="Midway" class="image" src="spr.jpg" draggable="false" /></a>
-        <a href="#m7"draggable="false"><img alt="1944" class="image" src="1944.png" draggable="false" /></a>
-        <a href="#m8"draggable="false"><img alt="Na Zachodzie bez zmian" class="image" src="aqotwf.webp" draggable="false" /></a>
-        <a href="#m9"draggable="false"><img alt="Przełęcz ocalonych" class="image" src="hacksaw.jpg" draggable="false" /></a>
-        <a href="#m10"draggable="false"><img alt="Jak rozpętałęm drugą wojnę światową" class="image" src="jr2ws.jpg" draggable="false" /></a>
-      </div>
-      <br>
-      <main>
-        
-      <div class="divs"><h2 id="m1">1917</h2>
-      <p>Dwaj brytyjscy szeregowcy Schofield i Blake, u schyłku Pierwszej Wojny Światowej otrzymują ogromnie ryzykowną misję, od której powodzenia zależy życie ich towarzyszy. Muszą przedrzeć się za linię wroga i przekazać rozkaz odwołujący atak, który w świetle nowych informacji nie ma najmniejszych szans powodzenia. Jeśli nie uda się wypełnić misji, niechybna śmierć czeka ponad 1600 żołnierzy, a wśród nich brata Blake'a.</p>
-      <img alt="Plakat filmu" src="https://m.media-amazon.com/images/I/71lDHpvrXRL.jpg" class="posters">
-      
-      <table>
-        <tr><td>gatunek</td><td>Dramat,Wojenny</td></tr>
-        <tr><td>produkcja</td><td>USA, Wielka Brytania, Indie, Hiszpania, Kanada</td></tr>
-        <tr><td>premiera</td><td>25 grudnia 2019 (Światowa premiera)<br>
-          24 stycznia 2020 (Polska premiera kinowa)</td></tr>
-      </table>
-      
-        
-      
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-2" />
-      
-        <ul class="wrap">
-          <h3>Obsada: </h3>
-          <li>George MacKay jako lance corporal William Schofield</li>
-          <li>Dean-Charles Chapman jako lance corporal Tom Blake</li>
-          <li>Mark Strong jako kapitan Smith</li>
-          <li class="target">Andrew Scott jako porucznik Leslie</li>
-          <li class="target">Richard Madden jako porucznik Joseph Blake</li>
-          <li class="target">Claire Duburcq jako Lauri</li>
-          <li class="target">Colin Firth jako generał Erinmore</li>
-          <li class="target">Benedict Cumberbatch jako pułkownik Mackenzie</li>
-          <li class="target">Daniel Mays jako sierżant Sanders</li>
-          <li class="target">Adrian Scarborough jako major Hepburn</li>
-          <li class="target">Jamie Parker jako porucznik Richards</li>
-          <li class="target"> Michael Jibson jako porucznik Hutton</li>
-          <li class="target">Richard McCabe jako pułkownik Collins</li>
-          <li class="target"> Nabhaan Rizwan jako Sipaj</li>
-          <li class="target"> Michael Cornelius jako szeregowy Cornelius</li>
-        </ul>
-       
-        
-        <label for="list-2" class="trigger"></label> 
-        
-        <a  class="scalediv" href="https://m.media-amazon.com/images/I/71lDHpvrXRL.jpg" >Powiększ zdjęcie</a>
-        
-        
-        
-      </div>
-      <div class="divs"><h2 id="m2">Dunkierka (Dunkirk)</h2>
-      <p>Wojska alianckie zostają przyparte do morza pod Dunkierką. Bitwa staje się sprawdzianem dla młodych żołnierzy, pilota RAF-u oraz załogi cywilnej łodzi płynącej przez Kanał La Manche.</p>
-      <img alt="Plakat filmu" src="https://wkrotce.ox.pl/thumbnails/w867-h578-ez/stare_wkrodce/dunk.png" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>Dramat,Wojenny</td></tr>
-        <tr><td>produkcja</td><td>Wielka Brytania, USA, Francja, Holandia</td></tr>
-        <tr><td>premiera</td><td>13 lipca 2017 (Światowa premiera)<br>
-          21 lipca 2017 (Polska premiera kinowa)</td></tr>
-          
 
-      </table>
-      
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-3" />
-      
-        <ul class="wrap2">
-          <h3>Obsada: </h3>
-          <li> Fionn Whitehead jako Tommy, szeregowy Armii Brytyjskiej</li>
-          <li>Tom Glynn-Carney jako Peter, syn pana Dawsona</li>
-          <li>Jack Lowden jako Collins, pilot Royal Air Force</li>
-          <li class="target2">Harry Styles jako Alex, szeregowy Armii Brytyjskiej</li>
-          <li class="target2">Aneurin Barnard jako Gibson, żołnierz z niskim stopniem wojskowym</li>
-          <li class="target2">James D’Arcy jako pułkownik Winnant</li>
-          <li class="target2">Barry Keoghan jako George</li>
-          <li class="target2">Kenneth Branagh jako komandor Bolton</li>
-          <li class="target2">Cillian Murphy jako dygoczący żołnierz</li>
-          <li class="target2">Mark Rylance jako pan Dawson, marynarz, ojciec Petera</li>
-          <li class="target2">Tom Hardy jako Farrier, pilot Royal Air Force </li>
-        </ul>
-       
-        
-        <label for="list-3" class="trigger"></label>
-         <a  class="scalediv" href="https://wkrotce.ox.pl/thumbnails/w867-h578-ez/stare_wkrodce/dunk.png">Powiększ zdjęcie</a>
-      </div>
-      <div class="divs"><h2 id="m3">Żołnierze Panfiłowa (28 панфиловцев)</h2>
-      <p>Film opisuje wydarzenia jakie rzekomo miały odbyć się 11 listopada 1941 r. Oddział złożony z 28 sowieckich żołnierzy miał zatrzymać batalion niemieckich czołgów i zniszczyć 18 maszyn. Wszyscy żołnierze 4 kompani 316 dywizji piechoty pod dowództwem generała-majora Iwana Panfiłowa mieli zginąć . Ich bohaterstwo opisał po raz pierwszy Aleksandr Krywickij w gazecie „Czerwona Gwiazda”, w ten sposób przyczyniając się do stworzenia ich kultu</p>
-      <img alt="Plakat filmu" src="https://assets.upflix.pl/media/plakat/2016/zolnierze-panfilowa__300_427.jpg" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>Dramat, Wojenny</td></tr>
-        <tr><td>produkcja</td><td>Rosja</td></tr>
-        <tr><td>premiera</td><td>
-          2 listopada 2016 (Światowa premiera)</td></tr>
-      </table>
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-4" />
-      
-        <ul class="wrap3">
-          <h3>Obsada: </h3>
-          <li> Yakov Kucherevskiy
-            Sierżant Dobrobabin</li>
-          <li>Aleksei Longin jako
-            Kapitan Pavel Gundilovich</li>
-          <li>Aleksey Morozov jako
-            Vasiliy Klochkov</li>
-          <li class="target3">Azamat Nigmanov jako
-            Sengirbaev</li>
-          <li class="target3">Andrey Shalopa jako
-            Porucznik Ugryumov</li>
-          <li class="target3">Aleksey Shutov jako
-            Niemiecki czołgista</li>
-          <li class="target3">Aleksandr Ustyugov jako
-            Moskalenko</li>
-          <li class="target3">Maksim Abrosimov jako
-            Panfiłow</li>
-          <li class="target3">Sergey Agafonov jako
-            Grigorij Bezrodnych</li>
-          <li class="target3">Ivan Batarev jako
-            Dowódca artylerii</li>
-        </ul>
-       
-        
-        <label for="list-4" class="trigger"></label>
-         <a  class="scalediv" href="https://assets.upflix.pl/media/plakat/2016/zolnierze-panfilowa__300_427.jpg">Powiększ zdjęcie</a>
-      </div>
-      
-      <div class="divs"><h2 id="m4">Helikopter w ogniu (Black Hawk Down)</h2>
-      <p>Oparta na faktach opowieść o bitwie w Mogadiszu. Była ona najdłużej trwającą walką, w którą zaangażowali się Amerykanie po wojnie w Wietnamie. Specjalne jednostki uderzeniowe amerykańskich sił zbrojnych - odział 120 Delta wraz z odpowiednim sprzętem zostają zrzucone 3 października 1993 do Somalii. Ich misja jest prosta. Mają porwać dwóch poruczników Mohameda Farraha Aidida, przywódcy wojsk zbuntowanych Somalijczyków. Jednakże zestrzelenie dwóch amerykańskich helikopterów UH-60 Black Hawk komplikuje sprawę.</p>
-      <img alt="Plakat filmu" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Black_hawk_down_ver1.jpg/220px-Black_hawk_down_ver1.jpg" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>Dramat, Wojenny</td></tr>
-        <tr><td>produkcja</td><td>USA, Wielka Brytania</td></tr>
-        <tr><td>premiera</td><td>18 grudnia 2001 (Światowa premiera)<br>
-          22 marca 2002 (Polska premiera kinowa)</td></tr>
-      </table>
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-5" />
-
-        <ul class="wrap4">
-          <h3>Obsada: </h3>
-          <li>Josh Hartnett – sierżant sztabowy Matthew Eversmann</li>
-          <li>Ewan McGregor – specjalista John Grimes</li>
-          <li>Jason Isaacs – kapitan Mike Steele</li>
-          <li class="target4">Tom Sizemore – podpułkownik Danny McKnight</li>
-          <li class="target4">Sam Shepard – generał William F. Garrison</li>
-          <li class="target4">Eric Bana – starszy sierżant Norman Hoot Gibson</li>
-          <li class="target4">Ioan Gruffudd – porucznik John Beales</li>
-          <li class="target4">Hugh Dancy – sierżant Kurt Doc Schmid</li>
-          <li class="target4">William Fichtner – starszy sierżant Jeff Sanderson</li>
-          <li class="target4">Ewen Bremner – specjalista Shawn Nelson</li>
-          <li class="target4">Orlando Bloom – st. szeregowy Todd Blackburn</li>
-          <li class="target4">Ron Eldard – pilot Michael Durant</li>
-
-        </ul>
+    <h2 id="m2">Dunkierka (Dunkirk)</h2>
+    <p>Wojska alianckie zostają przyparte do morza pod Dunkierką. Bitwa staje się sprawdzianem dla młodych
+      żołnierzy, pilota RAF-u oraz załogi cywilnej łodzi płynącej przez Kanał La Manche.</p>
+    <img alt="Plakat filmu" src="https://wkrotce.ox.pl/thumbnails/w867-h578-ez/stare_wkrodce/dunk.png" class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Christopher Nolan</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Christopher Nolan</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Dramat,Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>Wielka Brytania, USA, Francja, Holandia</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>13 lipca 2017 (Światowa premiera)<br>
+          21 lipca 2017 (Polska premiera kinowa)</td>
+      </tr>
 
 
-        <label for="list-5" class="trigger"></label> 
-        <a  class="scalediv" href="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Black_hawk_down_ver1.jpg/220px-Black_hawk_down_ver1.jpg">Powiększ zdjęcie</a>
-      </div>
+    </table>
+
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-3" />
+
+      <ul class="wrap2">
+        <h3>Obsada: </h3>
+        <li> Fionn Whitehead jako Tommy, szeregowy Armii Brytyjskiej</li>
+        <li>Tom Glynn-Carney jako Peter, syn pana Dawsona</li>
+        <li>Jack Lowden jako Collins, pilot Royal Air Force</li>
+        <li class="target2">Harry Styles jako Alex, szeregowy Armii Brytyjskiej</li>
+        <li class="target2">Aneurin Barnard jako Gibson, żołnierz z niskim stopniem wojskowym</li>
+        <li class="target2">James D’Arcy jako pułkownik Winnant</li>
+        <li class="target2">Barry Keoghan jako George</li>
+        <li class="target2">Kenneth Branagh jako komandor Bolton</li>
+        <li class="target2">Cillian Murphy jako dygoczący żołnierz</li>
+        <li class="target2">Mark Rylance jako pan Dawson, marynarz, ojciec Petera</li>
+        <li class="target2">Tom Hardy jako Farrier, pilot Royal Air Force </li>
+      </ul>
 
 
-      <div class="divs"><h2 id="m5">Szeregowiec Ryan (Saving Private Ryan)</h2>
-      <p>Francja, 1944 rok. Wojska alianckie lądują u wybrzeży Normandii. Kapitan Miller (Tom Hanks) otrzymuje rozkaz przeprowadzenia swojego oddziału za linię wroga i odszukania spadochroniarza Jamesa Ryana (Matt Damon), którego trzej bracia zginęli w walce. Dowództwo, pragnąc oszczędzić ich matce bólu, nie chce dopuścić do śmierci jej ostatniego syna. Ośmiu żołnierzy wykonuje rozkaz i naraża swoje życie, by odszukać jednego człowieka. Po pewnym czasie biorący udział w misji zaczynają wątpić w słuszność wyprawy.</p>
-      <img alt="Plakat filmu" src="https://fwcdn.pl/fpo/01/79/179/7710998.3.jpg" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>Dramat, Wojenny</td></tr>
-        <tr><td>produkcja</td><td>USA</td></tr>
-        <tr><td>premiera</td><td>21 lipca 1998 (Światowa premiera)<br>
-          11 września 1998 (Polska premiera kinowa)</td></tr>
-      </table>
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-6" />
+      <label for="list-3" class="trigger"></label>
+      <a class="scalediv" href="https://wkrotce.ox.pl/thumbnails/w867-h578-ez/stare_wkrodce/dunk.png">Powiększ
+        zdjęcie</a>
+    </div>
 
-        <ul class="wrap5">
-          <h3>Obsada: </h3>
-          <li>  Tom Hanks jako
-            Kapitan John H. Miller</li>
-          <li> Tom Sizemore jako
-            Sierżant Mike Horvath</li>
-          <li>Edward Burns jako
-            Szeregowy Richard Reiben</li>
-          <li class="target5">Barry Pepper jako
-            Szeregowy Daniel Jackson</li>
-          <li class="target5"> Adam Goldberg jako
-            Szeregowy Stanley Mellish</li>
-          <li class="target5"> Vin Diesel jako
-            Szeregowy Adrian Caparzo</li>
-          <li class="target5"> Matt Damon jako
-            Szeregowy James Francis Ryan</li>
-          <li class="target5">Nathan Fillion jako
-            Szeregowy James Frederick Ryan</li>
+    <h2 id="m3">Żołnierze Panfiłowa (28 панфиловцев)</h2>
+    <p>Film opisuje wydarzenia jakie rzekomo miały odbyć się 11 listopada 1941 r. Oddział złożony z 28 sowieckich
+      żołnierzy miał zatrzymać batalion niemieckich czołgów i zniszczyć 18 maszyn. Wszyscy żołnierze 4 kompani 316
+      dywizji piechoty pod dowództwem generała-majora Iwana Panfiłowa mieli zginąć . Ich bohaterstwo opisał po raz
+      pierwszy Aleksandr Krywickij w gazecie „Czerwona Gwiazda”, w ten sposób przyczyniając się do stworzenia ich
+      kultu</p>
+    <img alt="Plakat filmu" src="https://assets.upflix.pl/media/plakat/2016/zolnierze-panfilowa__300_427.jpg"
+      class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Kim Druzhinin, Andrey Shalopa</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Andrey Shalopa</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Dramat, Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>Rosja</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>
+          2 listopada 2016 (Światowa premiera)</td>
+      </tr>
+    </table>
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-4" />
 
-        </ul>
-
-
-        <label for="list-6" class="trigger"></label> 
-        <a  class="scalediv" href="https://fwcdn.pl/fpo/01/79/179/7710998.3.jpg">Powiększ zdjęcie</a>
-      </div>
-      <div class="divs"><h2 id="m6">Midway</h2>
-      <p>Obraz przedstawia starcie amerykańskiej floty z Cesarską Marynarką Wojenną Japonii, które było punktem zwrotnym działań wojennych II wojny światowej na Pacyfiku. Inspirowany prawdziwymi wydarzeniami film opowiada historię przywódców i żołnierzy, którzy wykorzystali swój instynkt, hart ducha i odwagę, aby pokonywać wszelkie przeciwności losu.</p>
-      <img alt="Plakat filmu" src="https://fwcdn.pl/fpo/77/78/827778/7900707.3.jpg" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>Dramat, Wojenny</td></tr>
-        <tr><td>produkcja</td><td>USA, Chiny</td></tr>
-        <tr><td>premiera</td><td>6 listopada 2019 (Światowa premiera)<br>
-          8 listopada 2019 (Polska premiera kinowa)</td></tr>
-      </table>
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-7" />
-
-        <ul class="wrap6">
-          <h3>Obsada: </h3>
-          <li>Ed Skrein jako Dick Best</li>
-          <li>Patrick Wilson jako Edwin Layton</li>
-          <li>Luke Evans jako Wade McClusky</li>
-          <li class="target6">Aaron Eckhart jako Jimmy Doolittle</li>
-          <li class="target6">Nick Jonas jako Bruno Gaido</li>
-          <li class="target6">Etsushi Toyokawa jako Isoroku Yamamoto</li>
-          <li class="target6">Tadanobu Asano jako Tamon Yamaguchi</li>
-          <li class="target6">Darren Criss jako Eugene Lindsey</li>
-          <li class="target6">Mandy Moore jako Ann Best</li>
-          <li class="target6">Dennis Quaid jako William „Byk” Halsey</li>
-          <li class="target6">Woody Harrelson jako Chester W. Nimitz</li>
-
-        </ul>
+      <ul class="wrap3">
+        <h3>Obsada: </h3>
+        <li> Yakov Kucherevskiy
+          Sierżant Dobrobabin</li>
+        <li>Aleksei Longin jako
+          Kapitan Pavel Gundilovich</li>
+        <li>Aleksey Morozov jako
+          Vasiliy Klochkov</li>
+        <li class="target3">Azamat Nigmanov jako
+          Sengirbaev</li>
+        <li class="target3">Andrey Shalopa jako
+          Porucznik Ugryumov</li>
+        <li class="target3">Aleksey Shutov jako
+          Niemiecki czołgista</li>
+        <li class="target3">Aleksandr Ustyugov jako
+          Moskalenko</li>
+        <li class="target3">Maksim Abrosimov jako
+          Panfiłow</li>
+        <li class="target3">Sergey Agafonov jako
+          Grigorij Bezrodnych</li>
+        <li class="target3">Ivan Batarev jako
+          Dowódca artylerii</li>
+      </ul>
 
 
-        <label for="list-7" class="trigger"></label> 
-        <a  class="scalediv" href="https://fwcdn.pl/fpo/77/78/827778/7900707.3.jpg">Powiększ zdjęcie</a>
-      </div>
+      <label for="list-4" class="trigger"></label>
+      <a class="scalediv" href="https://assets.upflix.pl/media/plakat/2016/zolnierze-panfilowa__300_427.jpg">Powiększ
+        zdjęcie</a>
+    </div>
 
 
-      <div class="divs"> <h2 id="m7">1944</h2>
-      <p>- To nie nasza wojna – mówi jeden z żołnierzy w estońskim filmie historycznym „1944”. Estonia w czasie II wojny światowej, ściskana imadłem dwóch wyniszczających totalitaryzmów, przechodzi dramat deportacji, bratobójczej walki między Estończykami wcielonymi do nieswoich armii, wycieńczona i zrujnowana w 1944 roku zostaje skazana na półwieczną okupację sowiecką.</p>
-      <img alt="Plakat filmu" src="https://fwcdn.pl/fpo/68/18/736818/7759817.3.jpg" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>Dramat, Wojenny</td></tr>
-        <tr><td>produkcja</td><td>Estonia, Finlandia</td></tr>
-        <tr><td>premiera</td><td>8 lutego 2015 (Światowa premiera)</td></tr>
-      </table> <div class="contener">
-        <input type="checkbox" class="state" id="list-8" />
+    <h2 id="m4">Helikopter w ogniu (Black Hawk Down)</h2>
+    <p>Oparta na faktach opowieść o bitwie w Mogadiszu. Była ona najdłużej trwającą walką, w którą zaangażowali
+      się Amerykanie po wojnie w Wietnamie. Specjalne jednostki uderzeniowe amerykańskich sił zbrojnych - odział
+      120 Delta wraz z odpowiednim sprzętem zostają zrzucone 3 października 1993 do Somalii. Ich misja jest
+      prosta. Mają porwać dwóch poruczników Mohameda Farraha Aidida, przywódcy wojsk zbuntowanych Somalijczyków.
+      Jednakże zestrzelenie dwóch amerykańskich helikopterów UH-60 Black Hawk komplikuje sprawę.</p>
+    <img alt="Plakat filmu"
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Black_hawk_down_ver1.jpg/220px-Black_hawk_down_ver1.jpg"
+      class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Ridley Scott</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Ken Nolan</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Dramat, Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>USA, Wielka Brytania</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>18 grudnia 2001 (Światowa premiera)<br>
+          22 marca 2002 (Polska premiera kinowa)</td>
+      </tr>
+    </table>
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-5" />
 
-        <ul class="wrap7">
-          <h3>Obsada: </h3>
-          <li>Kaspar Velberg - Karl Tammik</li>
-          <li>Kristjan Üksküla - Jüri Jõgi</li>
-          <li>Maiken Schmidt - Aino Tammik</li>
-          <li class="target7">Gert Raudsep - Ants Saareste</li>
-          <li class="target7">Ain Mäeots - kapitan Evald Viires</li>
-          <li class="target7">Marko Leht - Valter Hein</li>
-          <li class="target7">Märt Pius - Vennad Käärid</li>
-          <li class="target7">Hendrik Toompere - Kristjan</li>
-          <li class="target7">Priit Pius - Vennad Käärid</li>
-          <li class="target7">Magnús Mariuson - Carl</li>
-          <li class="target7">Pääru Oja - Elmar</li>
+      <ul class="wrap4">
+        <h3>Obsada: </h3>
+        <li>Josh Hartnett – sierżant sztabowy Matthew Eversmann</li>
+        <li>Ewan McGregor – specjalista John Grimes</li>
+        <li>Jason Isaacs – kapitan Mike Steele</li>
+        <li class="target4">Tom Sizemore – podpułkownik Danny McKnight</li>
+        <li class="target4">Sam Shepard – generał William F. Garrison</li>
+        <li class="target4">Eric Bana – starszy sierżant Norman Hoot Gibson</li>
+        <li class="target4">Ioan Gruffudd – porucznik John Beales</li>
+        <li class="target4">Hugh Dancy – sierżant Kurt Doc Schmid</li>
+        <li class="target4">William Fichtner – starszy sierżant Jeff Sanderson</li>
+        <li class="target4">Ewen Bremner – specjalista Shawn Nelson</li>
+        <li class="target4">Orlando Bloom – st. szeregowy Todd Blackburn</li>
+        <li class="target4">Ron Eldard – pilot Michael Durant</li>
 
-        </ul>
-
-
-        <label for="list-8" class="trigger"></label> 
-        <a  class="scalediv" href="https://fwcdn.pl/fpo/68/18/736818/7759817.3.jpg">Powiększ zdjęcie</a>
-      </div>
-      <div class="divs"><h2 id="m8">Na Zachodzie bez zmian (All Quiet on the Western Front)</h2>
-      <p>"Na Zachodzie bez zmian" to porywająca opowieść o młodym niemieckim żołnierzu na froncie zachodnim podczas I wojny światowej. Paul i jego towarzysze na własnej skórze doświadczają, jak początkowa euforia wojny przemienia się w desperację i strach, gdy walczą w okopach o swoje życie. Film w reżyserii Edwarda Bergera jest oparty na znanej na całym świecie powieści Ericha Marii Remarque’a pod tym samym tytułem.</p>
-      <img alt="Plakat filmu" src="https://www.granice.pl/sys6/pliki/okladka_f/dc6dd892b88eae6564cff2ddea472feb.jpeg" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>
-          Dramat, Wojenny</td></tr>
-        <tr><td>produkcja</td><td>USA, Niemcy</td></tr>
-        <tr><td>premiera</td><td>12 września 2022 (Światowa premiera)<br>
-          14 października 2022 (Polska premiera kinowa)</td></tr>
-      </table>
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-9" />
-
-        <ul class="wrap8">
-          <h3>Obsada: </h3>
-          <li>Felix Kammerer jako Paul Bäumer</li>
-          <li>Daniel Brühl jako Matthias Erzberger</li>
-          <li>Albrecht Schuch jako Stanislaus "Kat" Katczinsky</li>
-          <li class="target8">Aaron Hilmer jako Albert Kropp</li>
-          <li class="target8">Edin Hasanović jako Tjaden Stackfleet</li>
-          <li class="target8">Devid Striesow jako generał Friedrichs</li>
-          <li class="target8">Sebastian Hülk jako major von Brixdorf</li>
-          <li class="target8">Anton von Lucke jako kapitan von Helldorf</li>
-          <li class="target8">Andreas Döhler jako porucznik Hoppe</li>
-          <li class="target8">Michael Wittenborn jako Rektor</li>
-          <li class="target8"> Sascha Nathan jako hrabia von Oberndorff</li>
-          <li class="target8">Thibault de Montalembert jako generał Ferdinand Foch</li>
-
-        </ul>
+      </ul>
 
 
-        <label for="list-9" class="trigger"></label> 
-        <a  class="scalediv" href="https://www.granice.pl/sys6/pliki/okladka_f/dc6dd892b88eae6564cff2ddea472feb.jpeg">Powiększ zdjęcie</a>
-      </div>
+      <label for="list-5" class="trigger"></label>
+      <a class="scalediv"
+        href="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Black_hawk_down_ver1.jpg/220px-Black_hawk_down_ver1.jpg">Powiększ
+        zdjęcie</a>
+    </div>
 
 
-      <div class="divs"><h2 id="m9">Przełęcz ocalonych (Hacksaw Ridge)</h2>
-      <p>Tom Doss (Hugo Weaving) jest weteranem I Wojny Światowej, który nie stroni od alkoholu oraz regularnie bije swoją żonę Berthę (Rachel Griffiths) i dwóch synów. Najstarsze dziecko - Desmond (Andrew Garfield) pracuje w zakładzie zbrojeniowym w Wirginii i planuje przyszłość z pielęgniarką Dorothy (Teresa Palmer). Gdy wybucha II Wojna Światowa, chłopak wstępuje do wojska, pomimo że mógłby zostać w kraju dzięki swojej pracy. Zostaje wysłany na Okinawę, gdzie służy w korpusie medycznym. Ze względu na przynależność do Kościoła Adwentystów Dnia Siódmego oraz pacyfistyczne przekonania Desmond odmawia noszenia broni na froncie, przez co podpada swojemu kapitanowi Gloverowi (Sam Worthington) i kolegom z oddziału</p>
-      <img alt="Plakat filmu" src="https://www.themoviedb.org/t/p/original/wsczNsbRVWTNZIu8k9SRW6cwbuR.jpg" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>Biograficzny, Dramat, Wojenny</td></tr>
-        <tr><td>produkcja</td><td>USA, Australia</td></tr>
-        <tr><td>premiera</td><td>
+
+    <h2 id="m5">Szeregowiec Ryan (Saving Private Ryan)</h2>
+    <p>Francja, 1944 rok. Wojska alianckie lądują u wybrzeży Normandii. Kapitan Miller (Tom Hanks) otrzymuje
+      rozkaz przeprowadzenia swojego oddziału za linię wroga i odszukania spadochroniarza Jamesa Ryana (Matt
+      Damon), którego trzej bracia zginęli w walce. Dowództwo, pragnąc oszczędzić ich matce bólu, nie chce
+      dopuścić do śmierci jej ostatniego syna. Ośmiu żołnierzy wykonuje rozkaz i naraża swoje życie, by
+      odszukać jednego człowieka. Po pewnym czasie biorący udział w misji zaczynają wątpić w słuszność
+      wyprawy.</p>
+    <img alt="Plakat filmu" src="https://fwcdn.pl/fpo/01/79/179/7710998.3.jpg" class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Steven Spielberg</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Robert Rodat</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Dramat, Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>21 lipca 1998 (Światowa premiera)<br>
+          11 września 1998 (Polska premiera kinowa)</td>
+      </tr>
+    </table>
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-6" />
+
+      <ul class="wrap5">
+        <h3>Obsada: </h3>
+        <li> Tom Hanks jako
+          Kapitan John H. Miller</li>
+        <li> Tom Sizemore jako
+          Sierżant Mike Horvath</li>
+        <li>Edward Burns jako
+          Szeregowy Richard Reiben</li>
+        <li class="target5">Barry Pepper jako
+          Szeregowy Daniel Jackson</li>
+        <li class="target5"> Adam Goldberg jako
+          Szeregowy Stanley Mellish</li>
+        <li class="target5"> Vin Diesel jako
+          Szeregowy Adrian Caparzo</li>
+        <li class="target5"> Matt Damon jako
+          Szeregowy James Francis Ryan</li>
+        <li class="target5">Nathan Fillion jako
+          Szeregowy James Frederick Ryan</li>
+
+      </ul>
+
+
+      <label for="list-6" class="trigger"></label>
+      <a class="scalediv" href="https://fwcdn.pl/fpo/01/79/179/7710998.3.jpg">Powiększ zdjęcie</a>
+    </div>
+
+    <h2 id="m6">Midway</h2>
+    <p>Obraz przedstawia starcie amerykańskiej floty z Cesarską Marynarką Wojenną Japonii, które było
+      punktem zwrotnym działań wojennych II wojny światowej na Pacyfiku. Inspirowany prawdziwymi
+      wydarzeniami film opowiada historię przywódców i żołnierzy, którzy wykorzystali swój instynkt, hart
+      ducha i odwagę, aby pokonywać wszelkie przeciwności losu.</p>
+    <img alt="Plakat filmu" src="https://fwcdn.pl/fpo/77/78/827778/7900707.3.jpg" class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Roland Emmerich</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Wes Tooke</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Dramat, Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>USA, Chiny</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>6 listopada 2019 (Światowa premiera)<br>
+          8 listopada 2019 (Polska premiera kinowa)</td>
+      </tr>
+    </table>
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-7" />
+
+      <ul class="wrap6">
+        <h3>Obsada: </h3>
+        <li>Ed Skrein jako Dick Best</li>
+        <li>Patrick Wilson jako Edwin Layton</li>
+        <li>Luke Evans jako Wade McClusky</li>
+        <li class="target6">Aaron Eckhart jako Jimmy Doolittle</li>
+        <li class="target6">Nick Jonas jako Bruno Gaido</li>
+        <li class="target6">Etsushi Toyokawa jako Isoroku Yamamoto</li>
+        <li class="target6">Tadanobu Asano jako Tamon Yamaguchi</li>
+        <li class="target6">Darren Criss jako Eugene Lindsey</li>
+        <li class="target6">Mandy Moore jako Ann Best</li>
+        <li class="target6">Dennis Quaid jako William „Byk” Halsey</li>
+        <li class="target6">Woody Harrelson jako Chester W. Nimitz</li>
+
+      </ul>
+
+
+      <label for="list-7" class="trigger"></label>
+      <a class="scalediv" href="https://fwcdn.pl/fpo/77/78/827778/7900707.3.jpg">Powiększ zdjęcie</a>
+    </div>
+
+
+
+    <h2 id="m7">1944</h2>
+    <p>- To nie nasza wojna – mówi jeden z żołnierzy w estońskim filmie historycznym „1944”. Estonia w
+      czasie II wojny światowej, ściskana imadłem dwóch wyniszczających totalitaryzmów, przechodzi dramat
+      deportacji, bratobójczej walki między Estończykami wcielonymi do nieswoich armii, wycieńczona i
+      zrujnowana w 1944 roku zostaje skazana na półwieczną okupację sowiecką.</p>
+    <img alt="Plakat filmu" src="https://fwcdn.pl/fpo/68/18/736818/7759817.3.jpg" class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Elmo Nüganen</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Leo Kunnas</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Dramat, Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>Estonia, Finlandia</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>8 lutego 2015 (Światowa premiera)</td>
+      </tr>
+    </table>
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-8" />
+
+      <ul class="wrap7">
+        <h3>Obsada: </h3>
+        <li>Kaspar Velberg - Karl Tammik</li>
+        <li>Kristjan Üksküla - Jüri Jõgi</li>
+        <li>Maiken Schmidt - Aino Tammik</li>
+        <li class="target7">Gert Raudsep - Ants Saareste</li>
+        <li class="target7">Ain Mäeots - kapitan Evald Viires</li>
+        <li class="target7">Marko Leht - Valter Hein</li>
+        <li class="target7">Märt Pius - Vennad Käärid</li>
+        <li class="target7">Hendrik Toompere - Kristjan</li>
+        <li class="target7">Priit Pius - Vennad Käärid</li>
+        <li class="target7">Magnús Mariuson - Carl</li>
+        <li class="target7">Pääru Oja - Elmar</li>
+
+      </ul>
+
+
+      <label for="list-8" class="trigger"></label>
+      <a class="scalediv" href="https://fwcdn.pl/fpo/68/18/736818/7759817.3.jpg">Powiększ zdjęcie</a>
+    </div>
+
+    <h2 id="m8">Na Zachodzie bez zmian (All Quiet on the Western Front)</h2>
+    <p>"Na Zachodzie bez zmian" to porywająca opowieść o młodym niemieckim żołnierzu na froncie
+      zachodnim podczas I wojny światowej. Paul i jego towarzysze na własnej skórze doświadczają, jak
+      początkowa euforia wojny przemienia się w desperację i strach, gdy walczą w okopach o swoje życie.
+      Film w reżyserii Edwarda Bergera jest oparty na znanej na całym świecie powieści Ericha Marii
+      Remarque’a pod tym samym tytułem.</p>
+    <img alt="Plakat filmu" src="https://www.granice.pl/sys6/pliki/okladka_f/dc6dd892b88eae6564cff2ddea472feb.jpeg"
+      class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Edward Berger</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Edward Berger, Lesley Paterson</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>
+          Dramat, Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>USA, Niemcy</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>12 września 2022 (Światowa premiera)<br>
+          14 października 2022 (Polska premiera kinowa)</td>
+      </tr>
+    </table>
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-9" />
+
+      <ul class="wrap8">
+        <h3>Obsada: </h3>
+        <li>Felix Kammerer jako Paul Bäumer</li>
+        <li>Daniel Brühl jako Matthias Erzberger</li>
+        <li>Albrecht Schuch jako Stanislaus "Kat" Katczinsky</li>
+        <li class="target8">Aaron Hilmer jako Albert Kropp</li>
+        <li class="target8">Edin Hasanović jako Tjaden Stackfleet</li>
+        <li class="target8">Devid Striesow jako generał Friedrichs</li>
+        <li class="target8">Sebastian Hülk jako major von Brixdorf</li>
+        <li class="target8">Anton von Lucke jako kapitan von Helldorf</li>
+        <li class="target8">Andreas Döhler jako porucznik Hoppe</li>
+        <li class="target8">Michael Wittenborn jako Rektor</li>
+        <li class="target8"> Sascha Nathan jako hrabia von Oberndorff</li>
+        <li class="target8">Thibault de Montalembert jako generał Ferdinand Foch</li>
+
+      </ul>
+
+
+      <label for="list-9" class="trigger"></label>
+      <a class="scalediv"
+        href="https://www.granice.pl/sys6/pliki/okladka_f/dc6dd892b88eae6564cff2ddea472feb.jpeg">Powiększ
+        zdjęcie</a>
+    </div>
+
+
+
+    <h2 id="m9">Przełęcz ocalonych (Hacksaw Ridge)</h2>
+    <p>Tom Doss (Hugo Weaving) jest weteranem I Wojny Światowej, który nie stroni od alkoholu oraz
+      regularnie bije swoją żonę Berthę (Rachel Griffiths) i dwóch synów. Najstarsze dziecko - Desmond
+      (Andrew Garfield) pracuje w zakładzie zbrojeniowym w Wirginii i planuje przyszłość z
+      pielęgniarką Dorothy (Teresa Palmer). Gdy wybucha II Wojna Światowa, chłopak wstępuje do wojska,
+      pomimo że mógłby zostać w kraju dzięki swojej pracy. Zostaje wysłany na Okinawę, gdzie służy w
+      korpusie medycznym. Ze względu na przynależność do Kościoła Adwentystów Dnia Siódmego oraz
+      pacyfistyczne przekonania Desmond odmawia noszenia broni na froncie, przez co podpada swojemu
+      kapitanowi Gloverowi (Sam Worthington) i kolegom z oddziału</p>
+    <img alt="Plakat filmu" src="https://www.themoviedb.org/t/p/original/wsczNsbRVWTNZIu8k9SRW6cwbuR.jpg"
+      class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Mel Gibson</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Robert Schenkkan, Andrew Knight</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Biograficzny, Dramat, Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>USA, Australia</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>
           4 września 2016 (Światowa premiera)<br>
-          4 listopada 2016 (Polska premiera kinowa)</td></tr>
-      </table>
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-10" />
+          4 listopada 2016 (Polska premiera kinowa)</td>
+      </tr>
+    </table>
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-10" />
 
-        <ul class="wrap9">
-          <h3>Obsada: </h3>
-          <li>Andrew Garfield jako Desmond Doss</li>
-          <li> Sam Worthington jako kapitan Glover</li>
-          <li>Luke Bracey jako Smitty Ryker</li>
-          <li class="target9">Teresa Palmer jako Dorothy Shutte</li>
-          <li class="target9"> Hugo Weaving jako ojciec</li>
-          <li class="target9">Rachel Griffiths jako matka</li>
-          <li class="target9">   Vince Vaughn jako sierżant Howell</li>
-          <li class="target9">Nathaniel Buzolic jako Harold „Hal” Doss</li>
-          <li class="target9">Richard Roxburgh jako pułkownik Stelzer</li>
+      <ul class="wrap9">
+        <h3>Obsada: </h3>
+        <li>Andrew Garfield jako Desmond Doss</li>
+        <li> Sam Worthington jako kapitan Glover</li>
+        <li>Luke Bracey jako Smitty Ryker</li>
+        <li class="target9">Teresa Palmer jako Dorothy Shutte</li>
+        <li class="target9"> Hugo Weaving jako ojciec</li>
+        <li class="target9">Rachel Griffiths jako matka</li>
+        <li class="target9"> Vince Vaughn jako sierżant Howell</li>
+        <li class="target9">Nathaniel Buzolic jako Harold „Hal” Doss</li>
+        <li class="target9">Richard Roxburgh jako pułkownik Stelzer</li>
 
-        </ul>
-
-
-        <label for="list-10" class="trigger"></label> 
-        <a  class="scalediv" href="https://www.themoviedb.org/t/p/original/wsczNsbRVWTNZIu8k9SRW6cwbuR.jpg">Powiększ zdjęcie</a>
-      </div>
-      <div class="divs"><h2 id="m10">Jak rozpętałęm drugą wojnę światową</h2>
-      <p>Pechowy szeregowiec Franek Dolas myśli, że rozpętał II wojnę światową. Chcąc zabłysnąć bohaterskimi czynami, plącze się w coraz większe tarapaty.</p>
-      <img alt="Plakat filmu" src="https://fwcdn.pl/fpo/06/19/620619/7380536.6.jpg" class="posters">
-      <table>
-        <tr><td>gatunek</td><td>Komedia, Przygodowy, Wojenny</td></tr>
-        <tr><td>produkcja</td><td>Polska</td></tr>
-        <tr><td>premiera</td><td>2 kwietnia 1970 (Światowa i polska premiera kinowa)</td></tr>
-      </table>
-      <div class="contener">
-        <input type="checkbox" class="state" id="list-11" />
-
-        <ul class="wrap10">
-          <h3>Obsada: </h3>
-          <li>Marian Kociniak jako starszy strzelec Franciszek Dolas</li>
-          <li>Wirgiliusz Gryń jako Józek Kryska</li>
-          <li>Joanna Jędryka jako Teresa</li>
-          <li class="target10">Małgorzata Pritulak jako Mirella</li>
-          <li class="target10">Kazimierz Fabisiak jako ojciec Dominik, przeor klasztoru</li>
-          <li class="target10">Emil Karewicz jako oficer gestapo</li>
-          <li class="target10">Henryk Łapiński jako Władzio Wachocki</li>
-          <li class="target10">ndrzej Herder jako gestapowiec Hans</li>
-          <li class="target10">Jarosław Skulski jako pułkownik w polskiej ambasadzie w Belgradzie</li>
-          <li class="target10">Elżbieta Starostecka jako piosenkarka w tawernie</li>
-          <li class="target10">Wojciech Zagórski jako Turek werbujący na niemiecki statek</li>
-          <li class="target10">Józef Łodyński jako palacz na jugosłowiańskim statku</li>
-          <li class="target10">Jan Świderski jako kapitan Legii Cudzoziemskiej Letoux</li>
-          <li class="target10">Aleksander Fogiel jako Jóźwiak</li>
-        </ul>
+      </ul>
 
 
-        <label for="list-11" class="trigger"></label> 
-        <a  class="scalediv" href="https://fwcdn.pl/fpo/06/19/620619/7380536.6.jpg">Powiększ zdjęcie</a>
-      </div>
-    </main>
-    <footer>źródła: Filmweb, Wikipedia, wiedza własna</footer>
-      <script>
-        const track = document.getElementById("image-track");
+      <label for="list-10" class="trigger"></label>
+      <a class="scalediv" href="https://www.themoviedb.org/t/p/original/wsczNsbRVWTNZIu8k9SRW6cwbuR.jpg">Powiększ
+        zdjęcie</a>
+    </div>
 
-const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+    <h2 id="m10">Jak rozpętałęm drugą wojnę światową</h2>
+    <p>Pechowy szeregowiec Franek Dolas myśli, że rozpętał II wojnę światową. Chcąc zabłysnąć
+      bohaterskimi czynami, plącze się w coraz większe tarapaty.</p>
+    <img alt="Plakat filmu" src="https://fwcdn.pl/fpo/65/31/6531/8053239.6.jpg" class="posters">
+    <table>
+      <tr>
+        <td>Reżyseria</td>
+        <td>Tadeusz Chmielewski</td>
+      </tr>
+      <tr>
+        <td>Scenariusz</td>
+        <td>Tadeusz Chmielewski</td>
+      </tr>
+      <tr>
+        <td>gatunek</td>
+        <td>Komedia, Przygodowy, Wojenny</td>
+      </tr>
+      <tr>
+        <td>produkcja</td>
+        <td>Polska</td>
+      </tr>
+      <tr>
+        <td>premiera</td>
+        <td>2 kwietnia 1970 (Światowa i polska premiera kinowa)</td>
+      </tr>
+    </table>
+    <div class="contener">
+      <input type="checkbox" class="state" id="list-11" />
 
-const handleOnUp = () => {
-  track.dataset.mouseDownAt = "0";  
-  track.dataset.prevPercentage = track.dataset.percentage;
-}
-
-const handleOnMove = e => {
-  if(track.dataset.mouseDownAt === "0") return;
-  
-  let mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX
-  let     maxDelta = window.innerWidth / 2;
-  
-  let percentage = (mouseDelta / maxDelta) * -100
-  let     nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage
-  let     nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -250);
-  
-  track.dataset.percentage = nextPercentage;
-  
-  track.animate({
-    transform: `translate(${nextPercentage}%, -50%)`
-  }, { duration: 1200, fill: "forwards" });
-  
-  for(const image of track.getElementsByClassName("image")) {
-    image.animate({
-      objectPosition: `${100 + nextPercentage}% center`
-    }, { duration: 1200, fill: "forwards" });
-  }
-}
+      <ul class="wrap10">
+        <h3>Obsada: </h3>
+        <li>Marian Kociniak jako starszy strzelec Franciszek Dolas</li>
+        <li>Wirgiliusz Gryń jako Józek Kryska</li>
+        <li>Joanna Jędryka jako Teresa</li>
+        <li class="target10">Małgorzata Pritulak jako Mirella</li>
+        <li class="target10">Kazimierz Fabisiak jako ojciec Dominik, przeor klasztoru</li>
+        <li class="target10">Emil Karewicz jako oficer gestapo</li>
+        <li class="target10">Henryk Łapiński jako Władzio Wachocki</li>
+        <li class="target10">ndrzej Herder jako gestapowiec Hans</li>
+        <li class="target10">Jarosław Skulski jako pułkownik w polskiej ambasadzie w Belgradzie</li>
+        <li class="target10">Elżbieta Starostecka jako piosenkarka w tawernie</li>
+        <li class="target10">Wojciech Zagórski jako Turek werbujący na niemiecki statek</li>
+        <li class="target10">Józef Łodyński jako palacz na jugosłowiańskim statku</li>
+        <li class="target10">Jan Świderski jako kapitan Legii Cudzoziemskiej Letoux</li>
+        <li class="target10">Aleksander Fogiel jako Jóźwiak</li>
+      </ul>
 
 
-window.onmousedown = e => handleOnDown(e);
+      <label for="list-11" class="trigger"></label>
+      <a class="scalediv" href="https://fwcdn.pl/fpo/06/19/620619/7380536.6.jpg">Powiększ
+        zdjęcie</a>
+    </div>
+  </main>
+  <footer>źródła: Filmweb, Wikipedia, wiedza własna</footer>
+  <script>
+    const track = document.getElementById("image-track");
 
-window.ontouchstart = e => handleOnDown(e.touches[0]);
+    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
-window.onmouseup = e => handleOnUp(e);
+    const handleOnUp = () => {
+      track.dataset.mouseDownAt = "0";
+      track.dataset.prevPercentage = track.dataset.percentage;
+    }
 
-window.ontouchend = e => handleOnUp(e.touches[0]);
+    const handleOnMove = e => {
+      if (track.dataset.mouseDownAt === "0") return;
 
-window.onmousemove = e => handleOnMove(e);
+      let mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX
+      let maxDelta = window.innerWidth / 2;
 
-window.ontouchmove = e => handleOnMove(e.touches[0]);
+      let percentage = (mouseDelta / maxDelta) * -100
+      let nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage
+      let nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -250);
 
-const divdl = document.getElementById("divdl")
-if(localStorage.getItem("dl")=="l"){
-  f1()
-}
-function f1(){
-  const body = document.body;
- body.classList.toggle("lightmode")
- if(body.classList.contains("lightmode")){
- divdl.style.backgroundColor="black"
-localStorage.setItem("dl","l")
- }else{
-  divdl.style.backgroundColor="white"
-localStorage.setItem("dl","d")
- }
-}
-divdl.addEventListener("click", f1)
+      track.dataset.percentage = nextPercentage;
 
-      </script>
+      track.animate({
+        transform: `translate(${nextPercentage}%, -50%)`
+      }, { duration: 1200, fill: "forwards" });
+
+      for (const image of track.getElementsByClassName("image")) {
+        image.animate({
+          objectPosition: `${100 + nextPercentage}% center`
+        }, { duration: 1200, fill: "forwards" });
+      }
+    }
+
+
+    track.onmousedown = e => handleOnDown(e);
+
+    track.ontouchstart = e => handleOnDown(e.touches[0]);
+
+    window.onmouseup = e => handleOnUp(e);
+
+    window.ontouchend = e => handleOnUp(e.touches[0]);
+
+    track.onmousemove = e => handleOnMove(e);
+
+    track.ontouchmove = e => handleOnMove(e.touches[0]);
+
+    const divdl = document.getElementById("divdl")
+    if (localStorage.getItem("dl") == "l") {
+      f1()
+    }
+    function f1() {
+      const body = document.body;
+      body.classList.toggle("lightmode")
+      if (body.classList.contains("lightmode")) {
+        divdl.style.backgroundColor = "black"
+        localStorage.setItem("dl", "l")
+      } else {
+        divdl.style.backgroundColor = "white"
+        localStorage.setItem("dl", "d")
+      }
+    }
+    divdl.addEventListener("click", f1)
+
+  </script>
 </body>
+
 </html>

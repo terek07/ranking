@@ -3,26 +3,34 @@ body {
   width: 100vw;
   background-color: black;
   margin: 0rem;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   color: white;
   font-size: 110%;
-  
-  
+  transition: 0.5s;
+  overflow-x: hidden;
+
+
 }
-.lightmode{
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lightmode {
   background-color: white;
   color: black;
+
 }
 
 
 #image-track {
-  display:flex;
+  display: flex;
   gap: 3vmin;
-  position:relative;
+  position: relative;
   left: 3%;
   top: 30vh;
-  transform: translate(0%, -50%); 
-  user-select: none; 
+  transform: translate(0%, -50%);
+  user-select: none;
 }
 
 .image {
@@ -33,63 +41,108 @@ body {
   border-radius: 4px;
   transition: 0.7s;
 }
-.image:hover{
+
+.image:hover {
   scale: 110%;
 }
 
-h1,h2{
+h1,
+h2 {
   text-transform: uppercase;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+
 }
 
-main{
+main {
   margin: 40px;
 }
-td{
+
+td {
   padding: 6px;
 }
-footer{
+
+footer {
   font-size: small;
   color: gray;
   text-align: center;
   padding: 10px;
 }
-main{
+
+main {
   margin-left: 15vw;
   margin-right: 15vw;
 }
-p{
+
+p {
   line-height: 35px;
 
 }
+
 .state {
   display: none;
 }
-.target,.target2,.target3,.target4,.target5,.target6,.target7,.target8,.target9,.target10 {
+
+.target,
+.target2,
+.target3,
+.target4,
+.target5,
+.target6,
+.target7,
+.target8,
+.target9,
+.target10 {
   opacity: 0;
   max-height: 0;
   font-size: 0;
   transition: .25s ease;
 }
 
-#list-2:checked ~ .wrap .target,#list-3:checked ~ .wrap2 .target2,#list-4:checked ~ .wrap3 .target3,#list-5:checked ~ .wrap4 .target4,#list-6:checked ~ .wrap5 .target5,#list-7:checked ~ .wrap6 .target6,#list-8:checked ~ .wrap7 .target7,#list-9:checked ~ .wrap8 .target8,#list-10:checked ~ .wrap9 .target9,#list-11:checked ~ .wrap10 .target10  {
+#list-2:checked~.wrap .target,
+#list-3:checked~.wrap2 .target2,
+#list-4:checked~.wrap3 .target3,
+#list-5:checked~.wrap4 .target4,
+#list-6:checked~.wrap5 .target5,
+#list-7:checked~.wrap6 .target6,
+#list-8:checked~.wrap7 .target7,
+#list-9:checked~.wrap8 .target8,
+#list-10:checked~.wrap9 .target9,
+#list-11:checked~.wrap10 .target10 {
   opacity: 1;
   font-size: inherit;
   max-height: 999em;
 }
 
-#list-2 ~ .trigger:before,#list-3 ~ .trigger:before,#list-4 ~ .trigger:before,#list-5 ~ .trigger:before,#list-6 ~ .trigger:before,#list-7 ~ .trigger:before,#list-8 ~ .trigger:before,#list-9 ~ .trigger:before,#list-10 ~ .trigger:before,#list-11 ~ .trigger:before {
+#list-2~.trigger:before,
+#list-3~.trigger:before,
+#list-4~.trigger:before,
+#list-5~.trigger:before,
+#list-6~.trigger:before,
+#list-7~.trigger:before,
+#list-8~.trigger:before,
+#list-9~.trigger:before,
+#list-10~.trigger:before,
+#list-11~.trigger:before {
   content: 'Więcej';
 }
 
-#list-2:checked ~ .trigger:before,#list-3:checked ~ .trigger:before,#list-4:checked ~ .trigger:before,#list-5:checked ~ .trigger:before,#list-6:checked ~ .trigger:before,#list-7:checked ~ .trigger:before,#list-8:checked ~ .trigger:before,#list-9:checked ~ .trigger:before,#list-10:checked ~ .trigger:before,#list-11:checked ~ .trigger:before {
+#list-2:checked~.trigger:before,
+#list-3:checked~.trigger:before,
+#list-4:checked~.trigger:before,
+#list-5:checked~.trigger:before,
+#list-6:checked~.trigger:before,
+#list-7:checked~.trigger:before,
+#list-8:checked~.trigger:before,
+#list-9:checked~.trigger:before,
+#list-10:checked~.trigger:before,
+#list-11:checked~.trigger:before {
   content: 'Mniej';
 }
 
 
-.trigger ,.scalediv{
+.trigger,
+.scalediv {
   cursor: pointer;
   display: inline-block;
   padding: 0 .5em;
@@ -100,11 +153,15 @@ p{
   border-radius: .25em;
   font-family: 'Montserrat', sans-serif;
 }
-table,tr,td{
+
+table,
+tr,
+td {
   border: 1px solid grey;
   border-collapse: collapse;
 }
-#divdl{
+
+#divdl {
   position: fixed;
   top: 5%;
   left: 1%;
@@ -113,22 +170,26 @@ table,tr,td{
   border-radius: 40%;
   background-color: white;
   padding: 10px;
-  
+  z-index: 99;
+  cursor: pointer;
+
 }
 
 
-.contener{
-padding-bottom: 15px;
-border-bottom: 1px solid gray;
+.contener {
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
 }
-.posters{
+
+.posters {
   width: 180px;
   height: 230px;
   display: flex;
 }
-.posters,.scalediv{
+
+.posters,
+.scalediv {
   position: absolute;
   left: 1000px;
-  
-}
 
+}
